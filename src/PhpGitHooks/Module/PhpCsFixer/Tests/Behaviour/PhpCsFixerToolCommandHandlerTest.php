@@ -41,13 +41,13 @@ class PhpCsFixerToolCommandHandlerTest extends PhpCsFixerUnitTestCase
         $configurationData = ConfigurationDataResponseStub::createAllEnabled();
         $phpFiles = FilesCommittedStub::createOnlyPhpFiles();
 
-        $outputMessage = new PreCommitOutputWriter('Checking PSR0 code style with PHP-CS-FIXER');
+        $outputMessage = new PreCommitOutputWriter('Checking psr0 code style with PHP-CS-FIXER');
         $this->shouldWriteOutput($outputMessage->getMessage());
 
         $errors = null;
         foreach ($phpFiles as $file) {
             $errorText = 'ERROR';
-            $this->shouldProcessPhpCsFixerTool($file, 'PSR0', $phpCsFixerOptions->value(), $errorText);
+            $this->shouldProcessPhpCsFixerTool($file, 'psr0', $phpCsFixerOptions->value(), $errorText);
             $errors .= $errorText;
         }
 
@@ -77,38 +77,38 @@ class PhpCsFixerToolCommandHandlerTest extends PhpCsFixerUnitTestCase
         $configurationData = ConfigurationDataResponseStub::createAllEnabled();
         $phpFiles = FilesCommittedStub::createOnlyPhpFiles();
 
-        $outputMessagePsr0 = new PreCommitOutputWriter('Checking PSR0 code style with PHP-CS-FIXER');
+        $outputMessagePsr0 = new PreCommitOutputWriter('Checking psr0 code style with PHP-CS-FIXER');
         $this->shouldWriteOutput($outputMessagePsr0->getMessage());
 
         foreach ($phpFiles as $file) {
-            $this->shouldProcessPhpCsFixerTool($file, 'PSR0', $phpCsFixerOptions->value(), null);
+            $this->shouldProcessPhpCsFixerTool($file, 'psr0', $phpCsFixerOptions->value(), null);
         }
 
         $this->shouldWriteLnOutput($outputMessagePsr0->getSuccessfulMessage());
 
-        $outputMessagePsr1 = new PreCommitOutputWriter('Checking PSR1 code style with PHP-CS-FIXER');
+        $outputMessagePsr1 = new PreCommitOutputWriter('Checking psr1 code style with PHP-CS-FIXER');
         $this->shouldWriteOutput($outputMessagePsr1->getMessage());
 
         foreach ($phpFiles as $file) {
-            $this->shouldProcessPhpCsFixerTool($file, 'PSR1', $phpCsFixerOptions->value(), null);
+            $this->shouldProcessPhpCsFixerTool($file, 'psr1', $phpCsFixerOptions->value(), null);
         }
 
         $this->shouldWriteLnOutput($outputMessagePsr1->getSuccessfulMessage());
 
-        $outputMessagePsr2 = new PreCommitOutputWriter('Checking PSR2 code style with PHP-CS-FIXER');
+        $outputMessagePsr2 = new PreCommitOutputWriter('Checking psr2 code style with PHP-CS-FIXER');
         $this->shouldWriteOutput($outputMessagePsr2->getMessage());
 
         foreach ($phpFiles as $file) {
-            $this->shouldProcessPhpCsFixerTool($file, 'PSR2', $phpCsFixerOptions->value(), null);
+            $this->shouldProcessPhpCsFixerTool($file, 'psr2', $phpCsFixerOptions->value(), null);
         }
 
         $this->shouldWriteLnOutput($outputMessagePsr2->getSuccessfulMessage());
 
-        $outputMessageSymfony = new PreCommitOutputWriter('Checking SYMFONY code style with PHP-CS-FIXER');
+        $outputMessageSymfony = new PreCommitOutputWriter('Checking symfony code style with PHP-CS-FIXER');
         $this->shouldWriteOutput($outputMessageSymfony->getMessage());
 
         foreach ($phpFiles as $file) {
-            $this->shouldProcessPhpCsFixerTool($file, 'SYMFONY', $phpCsFixerOptions->value(), null);
+            $this->shouldProcessPhpCsFixerTool($file, 'symfony', $phpCsFixerOptions->value(), null);
         }
 
         $this->shouldWriteLnOutput($outputMessageSymfony->getSuccessfulMessage());
