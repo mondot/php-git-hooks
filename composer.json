@@ -1,6 +1,6 @@
 {
-    "name": "bruli/php-git-hooks",
-    "description": "Git hooks for PHP projects.",
+    "name": "iron-web/php-git-hooks",
+    "description": "IW's fork of Pablo Braulio's library (bruli/php-git-hooks). Git hooks for PHP projects.",
     "license": "MIT",
     "keywords": [
         "git",
@@ -11,6 +11,14 @@
         {
             "name": "Pablo Braulio",
             "email": "brulics@gmail.com"
+        },
+        {
+            "name": "Quentin Mondot",
+            "email": "quentinm@iron-mail.co.uk"
+        },
+        {
+            "name": "Jonathan Plugaru",
+            "email": "jonathanp@iron-mail.co.uk"
         }
     ],
     "type": "library",
