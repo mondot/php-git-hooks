@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f53d5df7ebf57f98b6d5ef10ebdcbc97",
-    "content-hash": "aca2591c5ed3d19144e4a417f466bbb1",
+    "hash": "eaaa9a1d9f8368e135229f70908c7d5e",
+    "content-hash": "7e53ef1c11fa49fcfbef8e43dd3177c8",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -101,54 +101,6 @@
             ],
             "description": "Ignore files",
             "time": "2016-02-27 20:06:58"
-        },
-        {
-            "name": "bruli/php-value-objects",
-            "version": "v0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bruli/php-value-objects.git",
-                "reference": "446020229744b54229a3c0119784b1638a711e37"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bruli/php-value-objects/zipball/446020229744b54229a3c0119784b1638a711e37",
-                "reference": "446020229744b54229a3c0119784b1638a711e37",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "^2.5",
-                "php": ">=5.6",
-                "symfony/intl": "^3.1"
-            },
-            "require-dev": {
-                "fzaninotto/faker": "^1.6",
-                "phpunit/phpunit": "^5.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PhpValueObjects": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pablo Braulio",
-                    "email": "brulics@gmail.com"
-                }
-            ],
-            "description": "PHP Value objects to use for DDD domains.",
-            "keywords": [
-                "ddd",
-                "objects",
-                "php",
-                "value"
-            ],
-            "time": "2016-07-10 21:42:14"
         },
         {
             "name": "doctrine/instantiator",
@@ -349,6 +301,62 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
+        },
+        {
+            "name": "iron-web/php-value-objects",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iron-web/php-value-objects.git",
+                "reference": "82c723d6d8a018b4fd6f806869993a498afee06f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iron-web/php-value-objects/zipball/82c723d6d8a018b4fd6f806869993a498afee06f",
+                "reference": "82c723d6d8a018b4fd6f806869993a498afee06f",
+                "shasum": ""
+            },
+            "require": {
+                "beberlei/assert": "^2.5",
+                "php": ">=5.6",
+                "symfony/intl": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "^1.6",
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PhpValueObjects": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pablo Braulio",
+                    "email": "brulics@gmail.com"
+                },
+                {
+                    "name": "Quentin Mondot",
+                    "email": "quentinm@iron-mail.co.uk"
+                },
+                {
+                    "name": "Jonathan Plugaru",
+                    "email": "jonathanp@iron-mail.co.uk"
+                }
+            ],
+            "description": "IW's fork of Pablo Braulio's library (bruli/php-value-objects). PHP Value objects to use for DDD domains.",
+            "keywords": [
+                "ddd",
+                "objects",
+                "php",
+                "value"
+            ],
+            "time": "2016-08-04 16:29:40"
         },
         {
             "name": "mockery/mockery",
@@ -2160,16 +2168,16 @@
         },
         {
             "name": "symfony/intl",
-            "version": "v3.1.2",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",
-                "reference": "2c5e101f3fcaeae81b68b439db684a8269b16617"
+                "reference": "8f3e7d2772173db99617a439f2104b092c51b3a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/intl/zipball/2c5e101f3fcaeae81b68b439db684a8269b16617",
-                "reference": "2c5e101f3fcaeae81b68b439db684a8269b16617",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/8f3e7d2772173db99617a439f2104b092c51b3a1",
+                "reference": "8f3e7d2772173db99617a439f2104b092c51b3a1",
                 "shasum": ""
             },
             "require": {
@@ -2231,7 +2239,7 @@
                 "l10n",
                 "localization"
             ],
-            "time": "2016-06-29 05:41:56"
+            "time": "2016-07-26 08:04:17"
         },
         {
             "name": "symfony/polyfill-intl-icu",
